@@ -1,0 +1,116 @@
+.assineja-container {
+    background-color: var(--cor-azul-agua);
+    color: var(--cor-azul-marinho);
+    margin-top: 30px;
+    margin-left: -30px;
+    padding: 20px 50px;
+    width: calc(100vw - 100px);
+    box-shadow: var(--shadow);
+}
+
+.assineja-container__titulo-flex {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100vw - 100px);
+    text-decoration: underline;
+
+    a {
+        color: var(--cor-azul-marinho);
+        font-weight: 800;
+        font-size: 25px;
+    }
+}
+
+.assineja-container__texto {
+    margin-top: 15px;
+    font-size: 20px;
+    line-height: 30px;
+    width: calc(100vw - 100px);
+
+    strong {
+        font-weight: 800;
+    }
+
+    a {
+        color: var(--cor-azul-marinho);
+        font-weight: 800;
+        text-decoration: underline;
+    }
+}
+
+.servico-container {
+    margin-top: 30px;
+    background-color: var(--cor-azul-marinho);
+    color: var(--cor-branco);
+    padding: 20px;
+    box-shadow: var(--shadow);
+}
+
+.servico-titulo-flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.servico__titulo {
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.servico__subtitulo {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.servico__texto {
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 25px;
+
+    strong {
+        font-weight: 600;
+    }
+}
+
+.servico-container-impar {
+    background-color: var(--cor-azul-bg);
+}
+
+
+@media (min-width: 480px) {
+
+    .servicos-container {
+        padding: 75px;
+        width: calc(100vw - 150px);
+    }
+
+    .servicos-grid {
+        margin-top: 30px;
+        width: 100%;
+        display: grid;
+        gap: 30px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }   
+
+    .assineja-container__titulo-flex {
+        width: auto;
+    }
+
+    .assineja-container {
+        margin: 0;
+        width: auto;
+        padding: 20px;
+    }
+
+    .servico-container {
+        margin-top: 0;
+    }
+
+    .assineja-container__texto {
+        width: auto;
+    } 
+
+}

@@ -1,0 +1,55 @@
+@charset "UFT-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* HOME */
+@import url(header.css);
+@import url(home/banner.css);
+@import url(home/slider.css);
+@import url(home/articles.css);
+@import url(home/central-vendas.css);
+@import url(footer.css);
+
+
+:root {
+    --cor-azul-bg: #124A9F;
+    --cor-azul-agua: #3BD8FF;
+    --cor-azul-claro-bg: #c5f4ff;
+    --cor-branco: white;
+    --cor-azul-marinho: #01255A;
+    --cor-azul-marinho-hover: #02122b;
+    --cor-whatsapp: #2AB640;
+    --cor-cinza: #6E6E6E;
+    --cor-preto: #000000;
+    --degrade-azul-claro: linear-gradient(0deg, rgba(255, 255, 255, 1) 100%, rgba(1, 212, 255, 0.2) 100%);
+    --shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    --fonte-principal: 'Inter', sans-serif;
+}
+
+* {
+    font-family: var(--fonte-principal);
+    text-decoration: none;
+}
+
+a {
+    color: white;
+}
+
+/*
+
+TEM QUE FAZER: 
+
+- click do botão tablet
+- alinhar a página contratos no meio
+- a pagina de estilos style2 é uma burrice, não?
+- colocar o olhozinho na senha da área do cliente
+- iPad Mini
+- PASSAR TODAS AS PÁGINAS NO pagespeed.web.dev pra arrumar tudo de performance
+
+
+
+
+- Ver se será possível vincular o login ao nosso sistema e já abrir a página em uma nova janela (após fazer login)
+
+
+*/

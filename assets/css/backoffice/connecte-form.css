@@ -1,0 +1,214 @@
+/* BANNER DA PÁGINA ÁREA DO CLIENTE - CONNECTÉ FORMULARIO */
+
+
+.connect-form__title {
+  font-weight: 600;
+}
+
+.form {
+  padding: 30px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.connect-form {
+  padding: 0 30px;
+  margin-bottom: 40px;
+}
+
+.form-label {
+  font-size: 12px;
+}
+
+.form-input {
+  padding: 5px;
+  border: none;
+  box-shadow: var(--shadow);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-input:disabled {
+  background-color: #f4f4f4;
+}
+
+.form-cp_ville-flex {
+  display: flex;
+
+  #code_postal {
+    width: 80%;
+  }
+}
+
+.mdp-gen {
+  display: flex;
+  gap: 15px;
+
+  #btn-mdp-gen {
+    width: 30%;
+    background-color: var(--cor-azul-bg);
+    color: var(--cor-branco);
+    border: none;
+    box-shadow: var(--shadow);
+  }
+}
+
+.form-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.form-btn-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#reset-add-client {
+  background-color: var(--cor-azul-bg);
+}
+
+.form-btn {
+  background-color: var(--cor-azul-marinho);
+  color: var(--cor-branco);
+  border: none;
+  box-shadow: var(--shadow);
+  padding: 10px 20px;
+  margin-top: 20px;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: var(--cor-azul-marinho-hover);
+  }
+}
+
+.form__text-erreur {
+  font-size: 12px;
+  color: red;
+  font-weight: 600;
+}
+
+.form-btn-container {
+  width: 100%;
+}
+
+.form-password-container {
+  margin-top: 20px;
+}
+
+#delete-admin {
+  background-color: rgb(156, 0, 0);
+}
+
+
+@media screen and (min-width: 480px) {
+
+  .form-cp_ville-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: auto;
+
+    #code_postal {
+      width: auto;
+    }
+  }
+
+  .form-input {
+    padding: 10px;
+  }
+
+  .connect-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .form-flex-nom,
+    .form-flex-prenom {
+      width: 30%;
+    }
+
+    .form-flex-adresse {
+      width: 100%;
+    }
+
+    .form-flex-complement {
+      width: 39.7%;
+    }
+
+    .form-flex-code_postal {
+      width: 20%;
+    }
+
+    .form-flex-ville {
+      width: 75%;
+    }
+
+    .form-flex-telephone {
+      width: 37%;
+    }
+
+    .form-flex-email {
+      width: 60%;
+    }
+
+    .form-flex-password {
+      width: 85.4%;
+    }
+
+    #password {
+      width: 70%;
+    }
+  }
+
+  .mdp-gen {
+    gap: 5px;
+  }
+
+  .form-btn-container {
+    gap: 30px;
+    justify-content: flex-end;
+    width: 100%;
+    margin-left: auto;
+  }
+
+  .form-btn {
+    padding: 20px 30px;
+  }
+
+  .form-password-container {
+    margin: 30px auto;
+    width: 40%;
+
+    .form-input {
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .form-btn-container {
+      justify-content: center;
+    }
+  }
+
+  #email-edit-admin,
+  #password-edit-admin,
+  #email-new-admin,
+  #password-new-admin {
+    width: 740px;
+  }
+
+  #prenom-edit-admin {
+    width: 100%;
+  }
+
+  #nom-edit-admin,
+  #nom-new-admin {
+    width: 500px;
+
+  }
+}
+
+@media (min-width: 1025px) {}
+
+@media (min-width: 1441px) {}

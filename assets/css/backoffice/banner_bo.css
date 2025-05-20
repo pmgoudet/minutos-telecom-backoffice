@@ -1,0 +1,80 @@
+.banner-img_connect {
+  height: 150px;
+  background-image: url(../../img/mobile/home-mobile-minutos-telecom_connect.webp);
+}
+
+
+.banner-txt__btn_connect {
+  background-color: var(--cor-azul-agua);
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: var(--cor-azul-marinho);
+  font-weight: 700;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 135px;
+}
+
+.banner-txt__btn__icon {
+  height: 30px;
+}
+
+@media screen and (min-width: 480px) {
+
+  .banner-img {
+    min-height: 365px;
+    height: 365px;
+  }
+
+  .banner-txt {
+    order: 0;
+    width: 100%;
+    padding: 0;
+    height: 222px;
+    min-height: 222px;
+  }
+
+  .banner-txt-container {
+    padding: 30px 110px;
+  }
+
+  .banner-txt .banner-img_connect {
+    background-image: url(../../img/tablet/home-tablet-minutos-telecom_connect.webp);
+    background-position: center bottom;
+    background-size: cover;
+  }
+
+}
+
+@media (min-width: 1025px) {
+
+  .header__logo-logo__connect {
+    height: 40px;
+  }
+
+  .banner-txt {
+    width: 45%;
+  }
+
+  .banner-txt-container {
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .banner-txt_connect {
+    height: 222px;
+    min-height: 222px;
+  }
+
+  .banner-img_connect {
+    order: 1;
+    background-image: url(../../img/desktop/home2-desktop-minutos-telecom_connect.webp);
+    width: 55%;
+    margin-top: -143px;
+    height: 365px;
+    background-position: center top;
+  }
+
+}
