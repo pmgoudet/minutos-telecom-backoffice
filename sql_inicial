@@ -5,9 +5,8 @@ Auth (gerencia login/logout)
 ClientManager (CRUD de clientes)
 
 
-
-http://localhost/minutos-telecom-_php/assets/app/controllers/controllerLoginAdmin.php
-
+http://localhost/minutos-backoffice/assets/app/controllers/controllerAddAdmin.php
+http://localhost/minutos-backoffice/assets/app/controllers/controllerLoginAdmin.php
 
 
 -- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
@@ -57,9 +56,8 @@ VALUES
 
 
 INSERT INTO `admin` (nom, prenom, email, `password`) VALUES
-('Presley', 'Elvis', 'elvis@admin.com', '$2y$10$Kb6uP5OqH9n/JRUo8c5Po.UE3yqayJhx3eRbWqALVFPyDj14VOGSu'),
-('Lennon', 'John', 'john@admin.com', '$2y$10$Kb6uP5OqH9n/JRUo8c5Po.UE3yqayJhx3eRbWqALVFPyDj14VOGSu'),
-('Mercury', 'Freddie', 'freddie@admin.com', '$2y$10$Kb6uP5OqH9n/JRUo8c5Po.UE3yqayJhx3eRbWqALVFPyDj14VOGSu'),
-('Cobain', 'Kurt', 'kurt@admin.com', '$2y$10$Kb6uP5OqH9n/JRUo8c5Po.UE3yqayJhx3eRbWqALVFPyDj14VOGSu'),
-('Jagger', 'Mick', 'mick@admin.com', '$2y$10$Kb6uP5OqH9n/JRUo8c5Po.UE3yqayJhx3eRbWqALVFPyDj14VOGSu');
-('Admin', 'Admin', 'admin@admin.ad', '$2y$10$Kb6uP5OqH9n/JRUo8c5Po.UE3yqayJhx3eRbWqALVFPyDj14VOGSu');
+('Presley', 'Elvis', 'elvis@admin.com', '1234'),
+('Lennon', 'John', 'john@admin.com', '1234'),
+('Mercury', 'Freddie', 'freddie@admin.com', '1234'),
+('Cobain', 'Kurt', 'kurt@admin.com', '1234'),
+('Jagger', 'Mick', 'mick@admin.com', '1234');
