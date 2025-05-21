@@ -15,7 +15,7 @@ git clone https://github.com/pmgoudet/minutos-backoffice.git
 ```
 
 ### 2.🗄️ Créer la base de données
-Créez une base de données MySQL en utilisant les commandes SQL fournies dans le fichier sql_inicial.sql, situé à la racine du projet.
+Créez une base de données MySQL en utilisant les commandes SQL fournies dans le fichier sql_inicial, situé à la racine du projet.
 
 ### 3. 🧑‍💻 Créer un compte administrateur
 Une fois la base de données créée, vous devez configurer votre compte admin en accédant à :
