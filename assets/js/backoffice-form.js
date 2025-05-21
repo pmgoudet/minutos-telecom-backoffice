@@ -73,18 +73,32 @@ document.getElementById("code_postal").addEventListener("input", function () {
   }
 });
 
-function chercherVilleParCP(codePostal) {
-  fetch(`https://geo.api.gouv.fr/communes?codePostal=${codePostal}&fields=nom&format=json`)
-    .then(response => response.json())
-    .then(data => {
-      if (data.length > 0) {
-        document.getElementById("ville").value = data[0].nom; // rempli la ville automatiquement
-      } else {
-        document.getElementById("ville").value = "";
-      }
-    })
-    .catch(error => console.error("Erreur lors de la récupération de la ville:", error));
+async function chercherVilleParCP(codePostal) {
+  try {
+    const response = await fetch(`https://geo.api.gouv.fr/communes?codePostal=${codePostal}&fields=nom&format=json`);
+    const data = response.json;
+    if (data.length > 0) {
+      document.getElementById('ville').value = data[0].nom;
+    } else {
+      document.getElementById('ville').value = "";
+    }
+  } catch (error) {
+    console.error("Erreur lors de la récupération de la ville:", error);
+  }
 }
+
+// function chercherVilleParCP(codePostal) {
+//   fetch(`https://geo.api.gouv.fr/communes?codePostal=${codePostal}&fields=nom&format=json`)
+//     .then(response => response.json())
+//     .then(data => {
+//       if (data.length > 0) {
+//         document.getElementById("ville").value = data[0].nom; // rempli la ville automatiquement
+//       } else {
+//         document.getElementById("ville").value = "";
+//       }
+//     })
+//     .catch(error => console.error("Erreur lors de la récupération de la ville:", error));
+// }
 
 const btnMdp = document.querySelector('#btn-mdp-gen');
 btnMdp.addEventListener('click', () => {
